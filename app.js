@@ -19,12 +19,13 @@ const server = http.createServer(app);
 //Local Alloy Proxy
 
 const localprox = new alloy({
-    prefix: '/prefix/',
+    prefix: '/mvhv5/',
     error: (proxy) => {
         return proxy.res.send(fs.readFileSync(path.join(__dirname, 'public', 'error.html'), 'utf8'));
     },
     request: [],
     response: [],
+    requestAgent: null,
     injection: true
 });
 
