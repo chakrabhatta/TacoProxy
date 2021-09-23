@@ -26,6 +26,7 @@ const localprox = new alloy({
     request: [],
     response: [],
     requestAgent: null,
+    proxy.response.headers : null,
     injection: true
 });
 
